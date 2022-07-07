@@ -1,0 +1,73 @@
+private double nota1;
+private double nota2;
+private int peso1;
+private int peso2;
+private Aluno aluno;
+private Disciplina disciplina;
+private double mediaFinal;
+
+public Boletim() {
+}
+public Boletim(Aluno aluno, Disciplina disciplina) {
+	this.aluno = aluno;
+	this.disciplina = disciplina;
+}
+public void setAluno(Aluno aluno) {
+	this.aluno = aluno;
+}
+public void setDisciplina(Disciplina disciplina) {
+	this.disciplina = disciplina;
+}
+public void setNota1(double nota1) {
+	this.nota1 = nota1;
+}
+public void setNota2(double nota2) {
+	this.nota2 = nota2;
+}
+public void setpeso1(int peso1) {
+	this.peso1 = peso1;
+}
+public void setpeso2(int peso2) {
+	this.peso2 = peso2;
+}
+public void setMediaFinal(double mediaFinal) {
+	this.mediaFinal = mediaFinal;
+}
+public void setAprovado(boolean aprovado) {
+	this.aprovado = aprovado;
+}
+public Aluno getAluno() {
+	return aluno;
+}
+public Disciplina getDisciplina() {
+	return disciplina;
+}
+public double getNota1() {
+	return nota1;
+}
+public double getNota2() {
+	return nota2;
+}
+public double getpeso11() {
+	return peso1;
+}
+public double getpeso2() {
+	return peso2;
+}
+public double getMediaFinal() {
+	return mediaFinal;
+}
+public boolean isAprovado() {
+	return aprovado;
+}
+public void calcularMediaFinal() {
+	mediaFinal = ((nota1 * peso1) + (nota2 * peso2)/2;
+}
+
+public void Resultado() {
+	if(mediaFinal >= 7.0) {
+		aprovado = true;
+	}else {
+		aprovado = false;
+	}
+}
